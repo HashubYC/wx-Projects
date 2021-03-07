@@ -1,0 +1,9 @@
+<view class="container">
+  <!-- <image class="user-avatar" src="/images/avatar/1.png"></image> -->
+  <l-avatar class="l-avatar" size="180" placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}"/>
+  <text class="motto">Hello，1111111！</text>
+  <!-- <button></button> -->
+  <view class="journey-container">
+    <text class="journey">点一下</text>
+  </view>
+</view>

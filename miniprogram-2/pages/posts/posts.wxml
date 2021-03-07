@@ -1,0 +1,33 @@
+<view>
+  <swiper indicator-dots="true" autoplay="true" duration="1000" interval="2000" circular="true">
+    <swiper-item>
+      <image src="/images/bestplayers.png"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/lpl.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/jumpfly.png"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="post-container">
+  <view class="post-author-date">
+    <image class="post-author" src="/images/avatar/3.png"></image>
+    <text class="post-date">Nov 18 2020</text>
+  </view>
+  <view>
+    <text class="post-title">2020LPL夏季赛季后赛观赛指南</text>
+    <image class="post-image" src="/images/lpl.png"></image>
+    <text class="post-content">fffddddfff1111232323232wwewewewewewe</text>
+  </view>
+  <view class="post-like">
+    <!-- <image class="post-like" src="/images/icon/chat.png"></image> -->
+    <l-icon class="post-like-image" size="28" name="favor" />
+    <text class="post-like-font">92</text>
+    <!-- <image class="post-like" src="/images/icon/view.png"></image> -->
+    <l-icon class="post-like-image" size="28" name="eye" />
+    <text class="post-like-font">102</text>
+  </view>
+</view>

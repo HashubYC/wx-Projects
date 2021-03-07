@@ -1,0 +1,14 @@
+<!--pages/musiclist/musiclist.wxml-->
+<view class="detail-container" style="background: url({{listInfo.coverImgUrl}}) no-repeat top/cover"></view>
+<view class="detail-mask"></view>
+<view class="detail-info">
+  <image src="{{listInfo.coverImgUrl}}" class="detail-img"></image>
+  <view class="detail">
+    <view class="detail-nm">{{listInfo.name}}</view>
+    <!-- <view class="detail-ds">{{listInfo.description}}</view> -->
+  </view>
+</view>
+
+<!-- tracks  传到了 组件(components) 中的 musiclist -->
+<x-musiclist tracks="{{tracks}}" />
+<x-musiclist trackIds="{{trackIds}}" />
