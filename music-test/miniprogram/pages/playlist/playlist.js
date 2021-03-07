@@ -85,7 +85,7 @@ Page({
       name: 'music', // 云函数名称
       data: {
         start: this.data.playlist.length,
-        count: 15,
+        count: 24,
         $url: 'playlist' // router后面的名称  music云函数
       }
     }).then((res) => {

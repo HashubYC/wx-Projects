@@ -10,16 +10,16 @@
   </view>
 
   <!-- 歌词面板 -->
-  <!-- <x-lyric
+  <x-lyric
     class="lyric"
     isLyricShow="{{ !isLyricShow }}"
     lyric="{{ lyric }}"
     bindtap="onChangeLyricShow"
     >
-  </x-lyric> -->
+  </x-lyric>
   
   <!-- 歌曲进度条 -->
-  <!-- <view class="progress-bar">
+  <view class="progress-bar">
     <x-progress-bar
       isSame="{{ isSame }}"
       bind:musicEnd="nextMusic"
@@ -28,10 +28,10 @@
       bind:musicPause="onPause"
       >
     </x-progress-bar>
-  </view> -->
+  </view>
 
   <!-- 控制面板 -->
-  <view class="control">
+  <view class="control" bind:musicEnd="nextMusic">
     <text class="iconfont icon-shangyishoushangyige" bindtap="prevMusic"></text>
     <text class="iconfont {{ isPlaying ? 'icon-zanting1' : 'icon-bofang1' }}" bindtap="togglePlay"></text>
     <text class="iconfont icon-xiayigexiayishou" bindtap="nextMusic"></text>

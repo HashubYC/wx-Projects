@@ -38,10 +38,18 @@ exports.main = async (event, context) => {
       return res
     })
   })
+
   app.router('musicUrl02', async (ctx, next) => {
     let musicUrl_test = 'https://music.163.com/song/media/outer/url?id=' + event.musicId + '.mp3'
-    ctx.body =  musicUrl_test
+    ctx.body = musicUrl_test
   })
+
+  app.router('lyric', async (ctx, next) => {
+    ctx.body = await rp(BASE_URL + '/lyric?id=' + event.musicId).then((res) => {
+      return res
+    })
+  })
+
   // app.router('trackIds', async (ctx, next) => {
   //   const tasks = []
   //   event.trackIds.forEach(element => {
