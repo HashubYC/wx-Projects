@@ -130,9 +130,9 @@ Component({
           });
           currentSec = sec;
           // 联动歌词
-          // this.triggerEvent('timeUpdate', {
-          //   currentTime
-          // });
+          this.triggerEvent('timeUpdate-progress-bar', {
+            currentTime  // event.detail.currentTime
+          });
         }
       });
       // 监听背景音频自然播放结束事件

@@ -1,4 +1,6 @@
 // components/lyric/lyric.js
+let lyricHeight = 0 // 当前歌词的高度
+
 Component({
   /**
    * 组件的属性列表
@@ -16,9 +18,11 @@ Component({
     lyric(lrc) {
       if (lrc == '暂无歌词') {
         this.setData({
-          lrcList: [{ lrc, timeSec: 0 }],
-          nowLyricIndex: -1
-        });
+          lrcList: [{
+            lrc,
+            timeSec: 0
+          }]
+        })
       } else {
         this._parseLyric(lrc);
       }
@@ -71,10 +75,12 @@ Component({
           });
         }
       });
+
       this.setData({
         lrcList: _lrcList
       });
     },
+
     /**
      * 父组件传递来的事件和参数，歌曲正在播放时不断触发，进行歌词高亮
      */

@@ -1,0 +1,37 @@
+<view class="container">
+  <!-- 博客头部  -->
+  <view class="blog-header">
+    <view class="blog-publish" bindtap="onPublish">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="blog-search">
+      <x-search bind:search="onSearch"></x-search>
+    </view>
+  </view>
+</view>
+
+<!-- 博客卡片列表-->
+<view class="blog-list">
+  <block wx:for="{{ blogList }}" wx:key="_id">
+    <view class="blog-panel">
+      <x-blog-card blog="{{ item }}" data-blog-id="{{ item._id }}" bindtap="goComment"></x-blog-card>
+      <!-- 评论、分享组件 iconfont 调用外部样式-->
+      <x-blog-ctrl
+        iconfont="iconfont"
+        icon-pinglun="icon-pinglun"
+        icon-fenxiang="icon-fenxiang"
+        blogId="{{ item._id }}"
+        blog="{{ item }}"
+        >
+      </x-blog-ctrl>
+    </view>
+  </block>
+</view>
+
+<!-- 博客底部授权弹出层 -->
+<x-login
+  isShowPopup="{{ isShowPopup }}"
+  bind:loginSuccess="onLoginSuccess"
+  bind:loginFail="onLoginFail"
+  >
+</x-login>

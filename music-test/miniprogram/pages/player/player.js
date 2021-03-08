@@ -108,7 +108,6 @@ Page({
           lyric: lyric,
         })
       })
-
     })
   },
 
@@ -173,6 +172,7 @@ Page({
   },
   /**
    * 监听子组件事件 将目前正在播放的时间，传递到歌词组件当中去
+   * updata 是在lyric组件中，自己定义的
    */
   timeUpdate(event) {
     this.selectComponent('.lyric').updata(event.detail.currentTime);
