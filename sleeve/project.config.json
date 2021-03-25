@@ -1,0 +1,156 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"appid": "wx4fac522fb61664c7",
+	"projectname": "c-sleeve",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "pid=15",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "无规格",
+					"pathName": "pages/detail/detail",
+					"query": "pid=11",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/home/test",
+					"pathName": "pages/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "pid=15",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pay-success",
+					"pathName": "pages/pay-success/pay-success",
+					"query": "pid=15",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "pid=15",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/theme-spu-list/theme-spu-list",
+					"pathName": "pages/theme-spu-list/theme-spu-list",
+					"query": "tname=t-2",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/theme-spu-list/theme-spu-list",
+					"pathName": "pages/theme-spu-list/theme-spu-list",
+					"query": "tname=t-2",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "id=32",
+					"scene": null
+				}
+			]
+		}
+	}
+}
