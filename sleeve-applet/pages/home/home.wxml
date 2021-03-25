@@ -1,4 +1,16 @@
 <!--pages/home/home.wxml-->
 <view>
-    <image src="{{topTheme.entrance_img}}" class="top-theme"></image>
+    <image src="{{themeA.entrance_img}}" class="themeA"></image>
+    <swiper class="swiper"
+            autoplay="true"
+            circular="true"
+            indicator-dots="true"
+            indicator-active-color="#157658"
+            interval="{{2000}}" duration="{{1000}}">
+        <block wx:for="{{bannerB.items}}">
+            <swiper-item>
+                <image class="swiper" src="{{item.img}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
 </view>

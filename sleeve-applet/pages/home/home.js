@@ -1,5 +1,6 @@
 // pages/home/home.js
 import {Theme} from "../../model/theme";
+import {Banner} from "../../model/banner";
 
 Page({
 
@@ -7,17 +8,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    topTheme: null,
+    themeA: null,
+    bannerB: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    Theme.getHomeLocationA(data=>{
-      this.setData({
-        topTheme: data[0]
-      })
+  // onLoad: async function (options) {
+      // 改写为 ES6 形式
+  async onLoad(options) {
+    // Theme.getHomeLocationA 会直接返回一个结果
+    // const data = await Theme.getHomeLocationA(
+        // data => {
+      // this.setData({
+      //   topTheme: data[0]
+      // })
+    // }
+
+    // )
+    // console.log("home/home.js: data：", data)
+    // this.setData({
+    //   topTheme: data[0]
+    // })
+    await this.initAllData()
+  },
+
+  // ES6 的写法
+  async initAllData() {
+    const themeA = await Theme.getHomeLocationA()
+    const bannerB = await Banner.getHomeLocationB()
+    this.setData({
+      themeA: themeA[0],
+      bannerB,
     })
   },
 
