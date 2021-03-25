@@ -1,6 +1,7 @@
 // pages/home/home.js
 import {Theme} from "../../model/theme";
 import {Banner} from "../../model/banner";
+import {Category} from "../../model/category";
 
 Page({
 
@@ -10,6 +11,7 @@ Page({
   data: {
     themeA: null,
     bannerB: null,
+    grid: [],
   },
 
   /**
@@ -18,19 +20,6 @@ Page({
   // onLoad: async function (options) {
       // 改写为 ES6 形式
   async onLoad(options) {
-    // Theme.getHomeLocationA 会直接返回一个结果
-    // const data = await Theme.getHomeLocationA(
-        // data => {
-      // this.setData({
-      //   topTheme: data[0]
-      // })
-    // }
-
-    // )
-    // console.log("home/home.js: data：", data)
-    // this.setData({
-    //   topTheme: data[0]
-    // })
     await this.initAllData()
   },
 
@@ -38,9 +27,12 @@ Page({
   async initAllData() {
     const themeA = await Theme.getHomeLocationA()
     const bannerB = await Banner.getHomeLocationB()
+    const grid = await Category.getGridCategory()
+
     this.setData({
       themeA: themeA[0],
       bannerB,
+      grid,
     })
   },
 

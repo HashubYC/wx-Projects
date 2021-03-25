@@ -1,0 +1,45 @@
+/* components/category-grid/index.wxss */
+.container {
+    width: 100%;
+    height: 320rpx;
+    display: flex;
+    /*flex-direction 属性指定了内部元素是如何在 flex 容器中布局的，定义了主轴的方向(正方向或反方向)。*/
+    /*row 方向文本排成一行*/
+    flex-direction: row;
+
+    /*align-items属性将所有直接子节点上的align-self值设置为一个组。 align-self属性设置项目在其包含块中在交叉轴方向上的对齐方式。*/
+    align-items: center;
+
+    justify-content: center;
+}
+
+/*
+虚线
+刚开始虚线不会出现（原因：自定义组件不能定义 样式）
+*/
+.inner-container {
+    width: 730rpx;
+    height: 300rpx;
+    border: 1px dashed #DCEBE6;
+}
+
+.grid-item {
+    width: 200rpx;
+    /*height: 200rpx;*/
+    /* 不设置高度 grid 组件会自动计算 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*图片 必须 指定 width height*/
+.img {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.text {
+    margin-top: 6rpx;
+    font-size: 24rpx;
+    color: #333333;
+}
