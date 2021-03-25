@@ -15,9 +15,9 @@ Page({
    */
   onLoad: function (options) {
     Theme.getHomeLocationA(data=>{
-      this.setData(
-          topTheme: data[0]
-      )
+      this.setData({
+        topTheme: data[0]
+      })
     })
   },
 
