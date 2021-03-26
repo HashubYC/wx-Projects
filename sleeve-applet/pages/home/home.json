@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "s-category-grid": "/components/category-grid/index"
-  }
+  },
+  "backgroundColor": "#f5f5f5"
 }
