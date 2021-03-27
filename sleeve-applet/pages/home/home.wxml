@@ -1,0 +1,48 @@
+<!--pages/home/home.wxml-->
+<!-- 数据绑定：绑定loadingType -->
+<l-loadmore
+        show="{{true}}"
+        endText="- 这是我设置的底线 -"
+        type="{{loadingType}}">
+
+    <view slot="content">
+        <image src="{{themeA.entrance_img}}" class="themeA"></image>
+        <swiper class="swiper"
+                autoplay="true"
+                circular="true"
+                indicator-dots="true"
+                indicator-active-color="#157658"
+                interval="{{2000}}" duration="{{1000}}">
+            <block wx:for="{{bannerB.items}}">
+                <swiper-item>
+                    <image class="swiper" src="{{item.img}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+
+        <s-category-grid grid="{{grid}}"></s-category-grid>
+
+        <image class="activity" src="{{activityD.entrance_img}}"></image>
+
+        <s-spu-scroll
+                theme="{{themeE}}"
+                spu-list="{{themeESpu}}"
+                wx:if="{{themeE.online}}">
+            <!--驼峰需要转换成连字符 spuList -> spu-list -->
+        </s-spu-scroll>
+
+        <image class="quality" src="{{themeF.entrance_img}}"></image>
+
+        <s-hot-list banner="{{bannerG}}"></s-hot-list>
+
+        <image class="fashion" src="{{themeH.entrance_img}}"></image>
+
+        <!-- 为你推荐 -->
+        <view class="spu-bottom">
+            <image class="title-spu-bottom" src="/imgs/home/title@interest.png"></image>
+            <!-- 自定义组件的传递 字符串为自定义的组件名称 -->
+            <l-water-flow generic:l-water-flow-item="s-spu-preview"></l-water-flow>
+        </view>
+    </view>
+
+</l-loadmore>

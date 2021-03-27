@@ -1,0 +1,45 @@
+/* components/hot-list/index.wxss */
+@import "../../wxss/sleeve.wxss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40rpx;
+    background-color: #ffffff;
+}
+
+.title {
+    width: 690rpx;
+    height: 90rpx;
+}
+
+.inner-container { /* 控制左右 */
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: row;
+    /* 下面两个连起来用才有效果
+    两端分布
+    */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left {
+    /*有间距，要加display*/
+    display: flex;
+    width: 346rpx;
+    height: 522rpx;
+}
+
+.right-size {
+    display: flex;
+    width: 400rpx;
+    height: 260rpx;
+}

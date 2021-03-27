@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "x-blog-card": "/components/blog-card/blog-card",
+    "x-blog-ctrl": "/components/blog-ctrl/blog-ctrl"
+  }
+}

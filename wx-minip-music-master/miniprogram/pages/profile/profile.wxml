@@ -1,0 +1,26 @@
+<!--miniprogram/pages/profile/profile.wxml-->
+<view class="profile-header">
+  <view class="avatar-url">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="nickname"></open-data>
+</view>
+
+<view class="nav">
+  <!-- 最近播放 -->
+  <view class="nav-item">
+    <navigator class="content" hover-class="none" url="/pages/play-history/play-history">
+      <i class="iconfont icon-bofangliebiao icon-nav"></i>
+      <text class="text">最近播放</text>
+      <i class="iconfont icon-you"></i>
+    </navigator>
+  </view>
+  <!-- 小程序码 -->
+  <view class="nav-item">
+    <view class="content" hover-class="none" bind:tap="onTapQRCode">
+      <i class="iconfont icon-erweima icon-nav"></i>
+      <text class="text">小程序码</text>
+      <i class="iconfont icon-you"></i>
+    </view>
+  </view>
+</view>

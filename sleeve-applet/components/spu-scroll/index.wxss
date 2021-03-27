@@ -1,0 +1,64 @@
+/* components/spu-scroll/index.wxss */
+.container {
+    /*box-sizing: border-box;*/
+    /*width: 100%;*/
+    /* 上边 | 右边 | 下边 | 左边 */
+    padding: 42rpx 0 34rpx 28rpx;
+    background-color: #ffffff;
+}
+
+.title {
+    width: 694rpx;
+    height: 90rpx;
+}
+
+/*
+单位和价格不一样可以这样设置两个
+一样的话可以只设置一个 l-class
+*/
+.price-unit {
+    font-size: 28rpx !important;
+    color: #157658 !important;
+}
+
+.price-value {
+    font-size: 32rpx !important;
+    font-weight: 800 !important;
+    color: #157658 !important;
+}
+
+.scroll-view {
+    margin-top: 28rpx;
+    /*height: 600rpx;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.spu-container {
+    margin-right: 60rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spu-text {
+    font-size: 20rpx;
+    color: #666;
+    margin-top: 20rpx;
+
+    /* 字数太少不会不会居中 */
+    /*width: 150rpx;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+}
+
+.spu-img {
+    width: 160rpx;
+    height: 160rpx;
+}

@@ -1,0 +1,14 @@
+<!--components/hot-list/index.wxml-->
+<view class="container">
+    <image class="title" src="{{banner.img}}"></image>
+    <view class="inner-container">
+        <!-- 不是普通列表不能直接 for 循环 -->
+        <view hover-class="rect-hover" hover-stay-time="{{200}}">
+            <image class="left" src="{{left.img}}"></image>
+        </view>
+        <view class="right-container">
+            <image class="right-size" src="{{rightTop.img}}"></image>
+            <image class="right-size" src="{{rightBottom.img}}"></image>
+        </view>
+    </view>
+</view>
